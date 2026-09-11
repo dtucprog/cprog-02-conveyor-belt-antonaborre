@@ -10,7 +10,7 @@ int main() {
     scanf("%d", &motor);
     printf("How many kg of packages do we expect?\n");
     scanf("%d", &weight);
-    if ((weight)>=(motor*12)){
+    if ((weight)<=(motor*12)){
         printf("Yes! The conveyor belt can carry the packages.\n");
     }
     else{
