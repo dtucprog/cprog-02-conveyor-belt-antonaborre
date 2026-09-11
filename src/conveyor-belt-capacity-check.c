@@ -1,9 +1,22 @@
 #include <stdio.h>
 
-int MOTOR_CAPACITY = 12;
+
 
 int main() {
-    int motorCount, totalPackageWeight;
+    int motor;
+    int weight;
+    printf("Hvor mange motor har du?\n");
+    fflush(stdout);
+    scanf("%d", &motor);
+    printf("hvor mange kg pakker forventer du?\n");
+    scanf("%d", &weight);
+    if ((weight)>=(motor*12)){
+        printf("du skal bruge flere motorer\n");
+    }
+    else{
+        printf("det kan den sagtens klarer\n");
+    }
+    
 
     /// YOUR CODE HERE
 }
