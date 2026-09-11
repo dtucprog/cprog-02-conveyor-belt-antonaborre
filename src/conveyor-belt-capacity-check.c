@@ -5,16 +5,16 @@
 int main() {
     int motor;
     int weight;
-    printf("Hvor mange motor har du?\n");
+    printf("How many motors are carrying the packages?\n");
     fflush(stdout);
     scanf("%d", &motor);
-    printf("hvor mange kg pakker forventer du?\n");
+    printf("How many kg of packages do we expect?\n");
     scanf("%d", &weight);
     if ((weight)>=(motor*12)){
-        printf("du skal bruge flere motorer\n");
+        printf("Yes! The conveyor belt can carry the packages.\n");
     }
     else{
-        printf("det kan den sagtens klarer\n");
+        printf("No. The conveyor belt cannot carry the packages.\n");
     }
     
 
